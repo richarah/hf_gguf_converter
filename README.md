@@ -2,14 +2,18 @@
 
 A tool for converting HuggingFace models to GGUF models (e.g. for use with llama.cpp)
 
-Usage:
+Before running
+Fetch the necessary submodules:
+`git submodule update --init --recursive`
+
+Usage
   download_convert.py <model_id> [--local_dir <local_dir>] [--outfile <outfile>] [--outtype <outtype>]
   download_convert.py (-h | --help)
 
-Arguments:
+Arguments
   model_id              HuggingFace model ID to download and convert
 
-Options:
+Options
   -h --help             Show this help message and exit
   --local_dir <local_dir>    Local directory to save the HuggingFace model [default: vicuna-hf]
   --outfile <outfile>  Output GGUF model file name [default: vicuna.gguf]
